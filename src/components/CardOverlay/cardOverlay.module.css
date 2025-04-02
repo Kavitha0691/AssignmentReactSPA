@@ -1,0 +1,134 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("../../assets/tickeImage.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: -15%;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 6px 6px 8px 0px rgba(170, 176, 176, 1);
+  text-align: center;
+}
+
+.cardH3 {
+  font-size: 1.2rem;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  background: #f8e1ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem;
+  padding-left: 20px;
+  color: rgb(52, 51, 51);
+}
+
+.button {
+  background: #0056ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background: #0041cc;
+}
+
+.link {
+  display: block;
+  margin-top: 5px;
+  color: #0056ff;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: -5%;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    width: 250px;
+    padding: 15px;
+  }
+
+  .cardH3 {
+    font-size: 1.3rem;
+  }
+
+  .cardList {
+    font-size: 1.2rem;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    bottom: -5;
+    margin-right: 15px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .cardH3 {
+    font-size: 1.4rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .cardList {
+    font-size: 1.2rem;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+
+}

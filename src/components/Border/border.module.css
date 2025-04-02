@@ -1,0 +1,47 @@
+.container {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  border: 10px solid transparent;
+  margin-top: 30px;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+}
+
+
+.borderImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  .borderImage {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    margin-top: 10px;
+    width: 95%;
+  }
+
+  .borderImage {
+    width: 100%;
+    height: auto;
+  }
+}

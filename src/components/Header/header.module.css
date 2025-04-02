@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagetitle {
+    color: rgb(28, 27, 27);
+    font-family: "Kaushan Script", cursive;
+    font-weight: 500;
+    font-size: 2.5rem;
+    font-style: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pagetitle {
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 50%;
+        height: auto;
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .pagetitle {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 40%;
+        height: auto;
+        padding-left: 0;
+    }
+}

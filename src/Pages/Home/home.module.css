@@ -1,0 +1,176 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid rgb(187, 192, 192);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 6px 0px rgb(187, 192, 192);
+}
+
+.cardImage {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 6px 6px 8px 0px rgba(170, 176, 176, 1);
+}
+
+.cardContent {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTitle {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.cardDescription {
+    font-size: 1rem;
+    color: #343333;
+}
+
+.card:nth-child(odd) {
+    flex-direction: row;
+}
+
+.card:nth-child(odd) .cardImage {
+    margin-right: 20px;
+}
+
+.card:nth-child(odd) .cardContent {
+    flex: 2;
+}
+
+.card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.card:nth-child(even) .cardImage {
+    margin-left: 20px;
+}
+
+.card:nth-child(even) .cardContent {
+    flex: 2;
+}
+
+.homeToggle {
+    background-color: rgb(143, 196, 196);
+    width: 15%;
+    height: auto;
+    border-radius: 10px;
+    border: .5px solid rgb(61, 61, 62);
+    padding: 10px;
+    box-shadow: 10px 7px 18px -6px rgba(166, 159, 166, 1);
+}
+
+.cardDescription {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 20px;
+    color: rgb(46, 45, 45);
+}
+
+
+@media (max-width: 768px) {
+    .homeContainer {
+        padding: 15px;
+    }
+
+    .list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .cardImage {
+        width: 50%;
+        height: 350px;
+        margin-bottom: 15px;
+    }
+
+    .cardContent {
+        padding: 15px;
+    }
+
+    .cardTitle {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .cardDescription {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .homeToggle {
+        padding: 10px;
+        width: 30%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .homeContainer {
+        padding: 10px;
+    }
+
+    .list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .cardImage {
+        width: 50%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .cardContent {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .cardTitle {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .homeToggle {
+        padding: 5px;
+        width: 60%;
+    }
+
+    .cardDescription {
+        font-size: 1.2rem;
+    }
+
+}
