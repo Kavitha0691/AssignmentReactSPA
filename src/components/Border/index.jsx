@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Border.module.css";
+import styles from "./border.module.css";
 import borderImage from "../../assets/border.png"; // Import the border image
 
 const Border = () => {
