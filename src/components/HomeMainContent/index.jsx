@@ -1,4 +1,4 @@
-import Image from '../../assets/mainBackground.jpg'
+// import Image from './assets/mainBackground.jpg'
 import CardOverlay from '../CardOverlay'
 import styles from './homeMainContent.module.css'
 
