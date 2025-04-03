@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./border.module.css";
+import borderImage from "../../assets/border.png"; 
 
 const Border = () => {
   return (
     <div className={styles.container}>
       <img 
-        src="./assets/border.png" 
+        src={borderImage}  
         alt="Border" 
         className={styles.borderImage} 
       />
