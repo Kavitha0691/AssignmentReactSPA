@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { rides } from '../../data/data';
 import styles from './category.module.css';
+import { getImageUrl } from '../../utils/functions';
 
 const CategoryPage = ({ category }) => {
   const filteredRides = rides.filter((ride) => ride.category === category);
@@ -46,7 +47,7 @@ const CategoryPage = ({ category }) => {
                   <h2 className={styles.rideTitle}>{ride.name}</h2>
 
                   {ride.img_url && (
-                    <img src={ride.img_url} alt={ride.name} className={styles.rideImage} />
+                    <img src={getImageUrl(ride.img_url)} alt={ride.name} className={styles.rideImage} />
                   )}
 
                   <button className={styles.toggleButton} onClick={() => toggleDescription(index)}>

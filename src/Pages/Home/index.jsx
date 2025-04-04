@@ -4,6 +4,7 @@ import { homedata } from "../../data/data";
 import HomeMain from "../../components/HomeMainContent";
 import Border from "../../components/Border";
 import HomeToggle from "../../components/HomeToggle";
+import { getImageUrl } from "../../utils/functions";
 
 const Home = () => {
   const [home, setHome] = useState(homedata);
@@ -26,7 +27,7 @@ const Home = () => {
               {/* Card Image */}
               {item.img_url && (
                 <img
-                  src={item.img_url}
+                  src={getImageUrl(item.img_url)}
                   alt={item.name}
                   className={styles.cardImage}
                 />
